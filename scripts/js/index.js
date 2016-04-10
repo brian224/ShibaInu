@@ -10,9 +10,9 @@
 		if (window.innerWidth < 500) {
 			document.getElementById('canvas').width = image.width / 2;
 			document.getElementById('canvas').height = image.height / 2;
-		} else {
-			document.getElementById('canvas').width = image.width;
-			document.getElementById('canvas').height = image.height;
+		// } else {
+		// 	document.getElementById('canvas').width = image.width;
+		// 	document.getElementById('canvas').height = image.height;
 		}
 	}
 
