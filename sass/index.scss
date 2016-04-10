@@ -1,0 +1,114 @@
+@import 'compass';
+@import 'compass/reset';
+
+body {
+	background: #fc3;
+}
+
+.main-title {
+	margin: 20px auto;
+	font-size: 32px;
+	text-align: center;
+}
+
+.main-content {
+	margin: 0 auto;
+	width: 800px;
+	overflow: hidden;
+	clear: both;
+}
+
+.canvas-wrap {
+	width: 500px;
+	float: left;
+
+	.copyright {
+		display: block;
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+.ctrl-panel {
+	padding-left: 20px;
+	width: 300px;
+	float: left;
+	@include box-sizing(border-box);
+
+	.desc {
+		margin-top: 20px;
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+}
+
+.ctrl-list .list {
+	margin-bottom: 10px;
+	font-size: 0;
+
+	span {
+		padding: 0 10px 0 0;
+		font-size: 16px;
+	}
+}
+
+.radio-label, .range-picker, .color-picker {
+	cursor: pointer;
+}
+
+.radio-label {
+	display: inline-block;
+	width: 50%;
+
+	input {
+		margin-right: 10px;
+	}
+}
+
+.btn-save {
+	margin-top: 20px;
+	background: #fff;
+	display: block;
+	width: 100%;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+
+	&:active, &:hover, &:visited {
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main-content {
+		width: 100%;
+	}
+
+	.canvas-wrap, .ctrl-panel {
+		margin: 0 auto;
+		padding: 0;
+		width: 500px;
+		float: none;
+	}
+
+	.canvas-wrap {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main-content {
+		padding: 0 20px;
+		@include box-sizing(border-box);
+	}
+
+	.canvas-wrap, .ctrl-panel {
+		width: 100%;
+	}
+}
