@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no , minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<title>回文圖產生器外傳 - 手寫的美好</title>	 	
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<h1 class="main-title">回文圖產生器外傳 - 手寫的美好</h1>
+	<div class="main-content">
+		<div class="canvas-wrap">
+			<canvas id="canvas"></canvas>
+			<em class="copyright">柴犬圖片來源:https://www.flickr.com/photos/jfleming701/</em>
+		</div>
+		<div class="ctrl-panel">
+			<ul class="ctrl-list">
+				<li class="list">
+					<label class="radio-label">
+						<input type="radio" name="action" value="draw" checked>
+						<span>筆刷</span>
+					</label>
+					<label class="radio-label">
+						<input type="radio" name="action" value="erase" id="erase">
+						<span>橡皮擦</span>
+					</label>
+				</li>
+				<li class="list">
+					<span>筆刷大小</span>
+					<input type="range" class="range-picker" min="1" max="50" value="5" />
+				</li>
+				<li class="list">
+					<span>筆刷顏色</span>
+					<input type="color" class="color-picker" value="#ffffff" />
+				</li>
+				<li class="list">
+					<a class="btn-save">下載圖檔</a>
+				</li>
+			</ul>
+			<p class="desc">※ IE 無法選顏色<br>※ iphone 要下載圖檔請久按圖片另存新檔<br>我懶，其他原本該有的功能交給原作來補強吧XD</p>
+		</div>
+	</div>
+</body>
+<script src="scripts/plugin/createjs/easeljs-0.8.2.min.js"></script>
+<script src="scripts/plugin/jquery.1.11.3.min.js"></script>
+<script src="scripts/js/index.js"></script>
+</html>
