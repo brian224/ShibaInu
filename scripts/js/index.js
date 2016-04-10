@@ -8,11 +8,8 @@
 		image.src = 'img/ShibaInu.png';
 
 		if (window.innerWidth < 500) {
-			document.getElementById('canvas').width = image.width / 2;
-			document.getElementById('canvas').height = image.height / 2;
-		// } else {
-		// 	document.getElementById('canvas').width = image.width;
-		// 	document.getElementById('canvas').height = image.height;
+			document.getElementById('canvas').width = 250;
+			document.getElementById('canvas').height = 304;
 		}
 	}
 
