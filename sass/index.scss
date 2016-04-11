@@ -8,6 +8,7 @@ body {
 .main-title {
 	margin: 20px auto;
 	font-size: 32px;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -103,12 +104,17 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.main-title {
+		font-size: 20px;
+	}
+
 	.main-content {
 		padding: 0 20px;
 		@include box-sizing(border-box);
 	}
 
 	.canvas-wrap, .ctrl-panel {
+		padding-bottom: 20px;
 		width: 100%;
 	}
 }
