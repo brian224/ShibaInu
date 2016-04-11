@@ -5,7 +5,7 @@
 	function init() {
 		image = new Image();
 		image.onload = handleComplete;
-		image.src = 'img/shibainu.png';
+		image.src = 'img/ShibaInu.png';
 
 		if (window.innerWidth < 500) {
 			document.getElementById('canvas').width = image.width / 2;
