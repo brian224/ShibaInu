@@ -6,11 +6,6 @@
 		image = new Image();
 		image.onload = handleComplete;
 		image.src = 'img/ShibaInu.png';
-
-		if (window.innerWidth < 500) {
-			document.getElementById('canvas').width = 250;
-			document.getElementById('canvas').height = 304;
-		}
 	}
 
 	function handleComplete() {
@@ -19,10 +14,6 @@
 		stage = new createjs.Stage(canvas);
 		shape = new createjs.Shape();
 		bitmap = new createjs.Bitmap(image);
-
-		if (window.innerWidth < 500) {
-			bitmap.scaleX = bitmap.scaleY = 0.5;
-		}
 
 		shape.cache(0, 0, image.width, image.height);
 		bitmap.cache(0, 0, image.width, image.height);

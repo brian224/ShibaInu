@@ -8,7 +8,6 @@ body {
 .main-title {
 	margin: 20px auto;
 	font-size: 32px;
-	font-weight: bold;
 	text-align: center;
 }
 
@@ -104,8 +103,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-	.main-title {
-		font-size: 20px;
+	#canvas {
+		width: 100%;
+		height: 100%;
 	}
 
 	.main-content {
@@ -114,7 +114,10 @@ body {
 	}
 
 	.canvas-wrap, .ctrl-panel {
-		padding-bottom: 20px;
 		width: 100%;
+	}
+
+	.xs-block {
+		display: block;
 	}
 }
