@@ -179,12 +179,17 @@ body {
 }
 @media screen and (max-width: 500px) {
   /* line 106, ../sass/index.scss */
+  .main-title {
+    font-size: 20px;
+  }
+
+  /* line 110, ../sass/index.scss */
   #canvas {
     width: 100%;
     height: 100%;
   }
 
-  /* line 111, ../sass/index.scss */
+  /* line 115, ../sass/index.scss */
   .main-content {
     padding: 0 20px;
     -moz-box-sizing: border-box;
@@ -192,12 +197,13 @@ body {
     box-sizing: border-box;
   }
 
-  /* line 116, ../sass/index.scss */
+  /* line 120, ../sass/index.scss */
   .canvas-wrap, .ctrl-panel {
+    padding-bottom: 20px;
     width: 100%;
   }
 
-  /* line 120, ../sass/index.scss */
+  /* line 125, ../sass/index.scss */
   .xs-block {
     display: block;
   }
