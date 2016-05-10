@@ -39,6 +39,23 @@
 			this.href = dataURL;
 			this.download = '汪汪汪';
 		}, false);
+
+		document.querySelector('.btn-fb').addEventListener('click',function(){
+			$.ajax({
+				type     : 'post',
+				url      : 'https://api.imgur.com/3/image',
+				headers  : {
+					Authorization : 'Client-ID 0bef3b504a94da8'
+				},
+				data     : {
+					image : canvas.toDataURL()
+				},
+				dataType : 'json',
+				success  : function(data) {
+					console.log('yo');
+				}
+			});
+		}, false);
 	}
 
 	function handleMouseDown(event) {

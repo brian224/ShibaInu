@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -72,10 +72,11 @@ body {
 .main-title {
   margin: 20px auto;
   font-size: 32px;
+  font-weight: bold;
   text-align: center;
 }
 
-/* line 14, ../sass/index.scss */
+/* line 15, ../sass/index.scss */
 .main-content {
   margin: 0 auto;
   width: 800px;
@@ -83,19 +84,19 @@ body {
   clear: both;
 }
 
-/* line 21, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
 .canvas-wrap {
   width: 500px;
   float: left;
 }
-/* line 25, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 .canvas-wrap .copyright {
   display: block;
   font-size: 12px;
   text-align: center;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 33, ../sass/index.scss */
 .ctrl-panel {
   padding-left: 20px;
   width: 300px;
@@ -104,41 +105,41 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 38, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 .ctrl-panel .desc {
   margin-top: 20px;
   font-size: 12px;
   line-height: 1.5em;
 }
 
-/* line 45, ../sass/index.scss */
+/* line 46, ../sass/index.scss */
 .ctrl-list .list {
   margin-bottom: 10px;
   font-size: 0;
 }
-/* line 49, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 .ctrl-list .list span {
   padding: 0 10px 0 0;
   font-size: 16px;
 }
 
-/* line 55, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .radio-label, .range-picker, .color-picker {
   cursor: pointer;
 }
 
-/* line 59, ../sass/index.scss */
+/* line 60, ../sass/index.scss */
 .radio-label {
   display: inline-block;
   width: 50%;
 }
-/* line 63, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .radio-label input {
   margin-right: 10px;
 }
 
-/* line 68, ../sass/index.scss */
-.btn-save {
+/* line 69, ../sass/index.scss */
+.btn-save, .btn-fb {
   margin-top: 20px;
   background: #fff;
   display: block;
@@ -151,19 +152,19 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 81, ../sass/index.scss */
-.btn-save:active, .btn-save:hover, .btn-save:visited {
+/* line 82, ../sass/index.scss */
+.btn-save:active, .btn-save:hover, .btn-save:visited, .btn-fb:active, .btn-fb:hover, .btn-fb:visited {
   color: #000;
   text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 88, ../sass/index.scss */
+  /* line 89, ../sass/index.scss */
   .main-content {
     width: 100%;
   }
 
-  /* line 92, ../sass/index.scss */
+  /* line 93, ../sass/index.scss */
   .canvas-wrap, .ctrl-panel {
     margin: 0 auto;
     padding: 0;
@@ -171,25 +172,25 @@ body {
     float: none;
   }
 
-  /* line 99, ../sass/index.scss */
+  /* line 100, ../sass/index.scss */
   .canvas-wrap {
     margin-bottom: 20px;
     text-align: center;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 106, ../sass/index.scss */
-  .main-title {
-    font-size: 20px;
-  }
-
-  /* line 110, ../sass/index.scss */
+  /* line 107, ../sass/index.scss */
   #canvas {
     width: 100%;
     height: 100%;
   }
 
-  /* line 115, ../sass/index.scss */
+  /* line 112, ../sass/index.scss */
+  .main-title {
+    font-size: 20px;
+  }
+
+  /* line 116, ../sass/index.scss */
   .main-content {
     padding: 0 20px;
     -moz-box-sizing: border-box;
@@ -197,13 +198,13 @@ body {
     box-sizing: border-box;
   }
 
-  /* line 120, ../sass/index.scss */
+  /* line 121, ../sass/index.scss */
   .canvas-wrap, .ctrl-panel {
     padding-bottom: 20px;
     width: 100%;
   }
 
-  /* line 125, ../sass/index.scss */
+  /* line 126, ../sass/index.scss */
   .xs-block {
     display: block;
   }
