@@ -8,6 +8,7 @@ body {
 .main-title {
 	margin: 20px auto;
 	font-size: 32px;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -58,14 +59,13 @@ body {
 
 .radio-label {
 	display: inline-block;
-	width: 50%;
 
 	input {
 		margin-right: 10px;
 	}
 }
 
-.btn-save {
+.btn-save, .btn-fb {
 	margin-top: 20px;
 	background: #fff;
 	display: block;
@@ -108,12 +108,17 @@ body {
 		height: 100%;
 	}
 
+	.main-title {
+		font-size: 20px;
+	}
+
 	.main-content {
 		padding: 0 20px;
 		@include box-sizing(border-box);
 	}
 
 	.canvas-wrap, .ctrl-panel {
+		padding-bottom: 20px;
 		width: 100%;
 	}
 

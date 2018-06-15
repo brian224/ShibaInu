@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no , minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<title>回文圖產生器外傳 - 手繪的美好</title>	 	
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-75048280-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<h1 class="main-title">回文圖產生器外傳 - <span class="xs-block">手繪的美好</span></h1>
+	<div class="main-content">
+		<div class="canvas-wrap">
+			<canvas id="canvas" width="500" height="607"></canvas>
+			<em class="copyright">柴犬圖片來源:https://www.flickr.com/photos/jfleming701/</em>
+		</div>
+		<div class="ctrl-panel">
+			<ul class="ctrl-list">
+				<li class="list">
+					<label class="radio-label">
+						<input type="radio" name="action" value="one" id="one" checked>
+						<span>筆刷1</span>
+					</label>
+					<label class="radio-label">
+						<input type="radio" name="action" value="two" id="two">
+						<span>筆刷2</span>
+					</label>
+				</li>
+				<li class="list">
+					<span>筆刷大小</span>
+					<input type="range" class="range-picker" min="1" max="50" value="5" />
+				</li>
+				<li class="list">
+					<a class="btn-save">下載圖檔</a>
+					<a class="btn-fb">分享</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="scripts/plugin/createjs/easeljs-0.8.2.min.js"></script>
+<script src="scripts/plugin/jquery.1.11.3.min.js"></script>
+<script src="scripts/js/brush.js"></script>
+</html>

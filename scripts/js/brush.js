@@ -1,5 +1,5 @@
 ﻿(function(){
-	var canvas, stage, shape, lastPt, oldMidPt, color, stroke, lastPt, image, bitmap,
+	var canvas, stage, shape, lastPt, oldMidPt, color, stroke, lastPt, image, bitmap, brush, brushimg,
 		isMouseDown = false;
 
 	function init() {
@@ -7,6 +7,10 @@
 		image.onload      = handleComplete;
 		image.crossOrigin = '*';
 		image.src         = 'img/ShibaInu.png';
+		brush             = new Image();
+		brush.onload      = handleComplete;
+		brush.crossOrigin = '*';
+		brush.src         = 'img/brush2.png';
 	}
 
 	function handleComplete() {
@@ -63,7 +67,6 @@
 
 	function handleMouseDown(event) {
 		isMouseDown = true;
-		color       = document.querySelector('.color-picker').value;
 		stroke      = document.querySelector('.range-picker').value;
 		lastPt      = new createjs.Point(stage.mouseX, stage.mouseY);
 		oldMidPt    = lastPt.clone();
@@ -77,9 +80,12 @@
 			lastPt.y + stage.mouseY >> 1
 		);
 
-		shape.graphics.setStrokeStyle(stroke, 'round', 'round').beginStroke(color).moveTo( nowMidPt.x, nowMidPt.y ).curveTo(lastPt.x, lastPt.y, oldMidPt.x, oldMidPt.y);
-		shape.updateCache(erase.checked ? 'destination-out' : 'source-over');
-		shape.graphics.clear();
+		brushimg = new createjs.Bitmap(brush);
+		brushimg.cache(0, 0, brush.width, brush.height);
+		brushimg.x = nowMidPt.x - (brush.width / 2 * stroke * 0.02);
+		brushimg.y = nowMidPt.y - (brush.height / 2 * stroke * 0.02);
+		brushimg.scaleX = stroke * 0.02;
+		brushimg.scaleY = stroke * 0.02;
 
 		lastPt.x = stage.mouseX;
 		lastPt.y = stage.mouseY;
@@ -87,6 +93,7 @@
 		oldMidPt.x = nowMidPt.x;
 		oldMidPt.y = nowMidPt.y;
 
+		stage.addChild(brushimg);
 		stage.update();
 	}
 
