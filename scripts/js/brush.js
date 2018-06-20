@@ -3,10 +3,10 @@
 		isMouseDown = false;
 
 	function init() {
-		image             = new Image();
-		image.onload      = handleComplete;
-		image.crossOrigin = '*';
-		image.src         = 'img/ShibaInu.png';
+		image              = new Image();
+		image.onload       = handleComplete;
+		image.crossOrigin  = '*';
+		image.src          = 'img/ShibaInu.png';
 		brush1             = new Image();
 		brush1.onload      = handleComplete;
 		brush1.crossOrigin = '*';
